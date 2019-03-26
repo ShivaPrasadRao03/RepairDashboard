@@ -119,90 +119,69 @@
                                     <div class="card-panel">
                                         <h4 class="header2"><center>Selection Form</center></h4>
                                         <div class="row">
-                                            <form class="formValidate" id="formValidate" method="get" action="">
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <label for="uname">Account Name</label>
-                                                        <input id="uname" name="uname" type="text" data-error=".errorTxt1">
+                                            <div class="input-field col s12">
 
-                                                    </div>
-                                                    <div class="col s12">
+                                                <select class="mdb-select md-form" id="crole" name="crole" data-error=".errorTxt6">
+                                                    <option>Select Account</option>
+                                                    <option>Ap</option>
+                                                    <option>Ts</option>
+                                                </select>
 
-                                                        <select class="mdb-select md-form" id="crole" name="crole" data-error=".errorTxt6">
-                                                            <option>Select State</option>
-                                                            <option>Ap</option>
-                                                            <option>Ts</option>
-                                                        </select>
-                                                        <div class="errorTxt2"></div>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <label for="password">Units</label>
-                                                        <input type="text"  data-error=".errorTxt3">
+                                            </div>
+                                            <div class="col s12">
 
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <textarea id="ccomment" name="ccomment" class="materialize-textarea validate" data-error=".errorTxt7"></textarea>
-                                                        <label for="ccomment">Your comment</label>
-                                                        <div class="errorTxt4"></div>
-                                                    </div>
-                                                    <div class="input-field col s12">
-                                                        <label for="curl">Call Center Person</label>
-                                                        <input type="text" name="curl" data-error=".errorTxt5">
+                                                <select class="mdb-select md-form" id="crole" name="crole" data-error=".errorTxt6">
+                                                    <option>Select District</option>
+                                                    <option>Ap</option>
+                                                    <option>Ts</option>
+                                                </select>
+                                                <div class="errorTxt2"></div>
+                                            </div>
 
-                                                    </div>
+                                            <div class="col s12">
 
-                                                    <div class="input-field col s12">
-                                                        <label for="curl">Call Date</label>
-                                                        <input type="text"  id="startdate" data-error=".errorTxt5">
-
-                                                    </div>
-
-
-                                                    <div class="input-field col s12">
-                                                        <label for="curl">Sales Exec Assigned</label>
-                                                        <input type="text" name="curl" data-error=".errorTxt5">
-
-                                                    </div>
-
-
-                                                    <div class="input-field col s12">
-                                                        <label for="curl">Sales Exec Assigned Date</label>
-                                                        <input type="text" id="enddate" name="curl" data-error=".errorTxt5">
-
-                                                    </div>
-
-
-                                                </div>
+                                                <select class="mdb-select md-form" id="crole" name="crole" data-error=".errorTxt6">
+                                                    <option>Select Vehicle</option>
+                                                    <option>Ap</option>
+                                                    <option>Ts</option>
+                                                </select>
+                                                <div class="errorTxt2"></div>
+                                            </div>
 
 
 
-                                                <div class="input-field col s7">
-                                                    <button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
-                                                        <!--<i class="material-icons right">send</i>-->
-                                                    </button>
-                                                </div>
+
+
+
+
+                                            <div class="input-field col s7">
+                                                <button class="btn waves-effect waves-light right submit" type="submit" name="action">Submit
+                                                    <!--<i class="material-icons right">send</i>-->
+                                                </button>
+                                            </div>
                                         </div>
-                                        </form>
                                     </div>
+                                    </form>
                                 </div>
                             </div>
-
                         </div>
+
                     </div>
-                    <!-- Floating Action Button -->
-
-                    <!-- Floating Action Button -->
             </div>
-            <!--end container-->
-        </section>
-        <!-- END CONTENT -->
-        <!-- //////////////////////////////////////////////////////////////////////////// -->
-        <!-- START RIGHT SIDEBAR NAV-->
-        <jsp:include page="../commonfiles/rightsidebar.jsp" />
+            <!-- Floating Action Button -->
 
-        <!-- END RIGHT SIDEBAR NAV-->
-    </div>
-    <!-- END WRAPPER -->
+            <!-- Floating Action Button -->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- END CONTENT -->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!-- START RIGHT SIDEBAR NAV-->
+    <jsp:include page="../commonfiles/rightsidebar.jsp" />
+
+    <!-- END RIGHT SIDEBAR NAV-->
+</div>
+<!-- END WRAPPER -->
 </div>
 <!-- END MAIN -->
 <!-- //////////////////////////////////////////////////////////////////////////// -->

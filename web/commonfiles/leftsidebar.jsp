@@ -26,7 +26,7 @@
                         <li class="bold">
                             <a class="collapsible-header waves-effect waves-cyan active">
                                 <i class="fa fa-home"></i>
-                                <span class="nav-text">Repair Admin</span>
+                                <span class="nav-text"> Admin</span>
                             </a>
                             <div class="collapsible-body">
                                 <ul>
