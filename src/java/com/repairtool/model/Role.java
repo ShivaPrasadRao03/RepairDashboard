@@ -10,9 +10,27 @@ package com.repairtool.model;
  * @author glodeveloper
  */
 public class Role {
-    
-    private  String roleID;
-    private  String roleName;
+
+    private String roleID;
+    private String roleName;
+    private String creationTime;
+    private String updationTime;
+
+    public String getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(String creationTime) {
+        this.creationTime = creationTime;
+    }
+
+    public String getUpdationTime() {
+        return updationTime;
+    }
+
+    public void setUpdationTime(String updationTime) {
+        this.updationTime = updationTime;
+    }
 
     public String getRoleID() {
         return roleID;
@@ -29,7 +47,5 @@ public class Role {
     public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
-    
-    
-    
+
 }

@@ -16,6 +16,24 @@ public class User {
     private String roleID;
     private String emailID;
     private String password;
+    private String creationTime;
+    private String updationTime;
+
+    public String getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(String creationTime) {
+        this.creationTime = creationTime;
+    }
+
+    public String getUpdationTime() {
+        return updationTime;
+    }
+
+    public void setUpdationTime(String updationTime) {
+        this.updationTime = updationTime;
+    }
 
     public String getAccountID() {
         return accountID;
