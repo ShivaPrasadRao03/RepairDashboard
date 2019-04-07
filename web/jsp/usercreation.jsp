@@ -15,6 +15,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="msapplication-tap-highlight" content="no">
         <title>User Creation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Favicons-->
         <link rel="icon" href="<%=request.getContextPath()%>/images/favicon/favicon-32x32.png" sizes="32x32">
         <!-- Favicons-->
@@ -38,11 +39,11 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
 
-
+        <script src="<%=request.getContextPath()%>/js/GetDropdown.js" type="text/javascript"></script>
 
 
     </head>
-    <body>
+    <body onload="getAccounts('<%=request.getContextPath()%>')">
         <!-- Start Page Loading -->
         <div id="loader-wrapper">
             <div id="loader"></div>
@@ -120,9 +121,10 @@
                                             <form class="formValidate" id="formValidate" method="get" action="">
                                                 <div class="row">
                                                     <div class="input-field col s12">
-                                                        <label for="uname">Account Name</label>
-                                                        <input id="uname" name="uname" type="text" data-error=".errorTxt1">
-
+                                                        
+                                                        <select class="mdb-select md-form" id="accountID" name="accountID" data-error=".errorTxt6">
+                                                            <option>Select Account</option>
+                                                        </select>
                                                     </div>
                                                     <div class="col s12">
 
@@ -138,7 +140,7 @@
                                                         <input type="text"  data-error=".errorTxt3">
 
                                                     </div>
-                                                   
+
                                                     <div class="input-field col s12">
                                                         <label for="curl">Contact Phone</label>
                                                         <input type="text" name="curl" data-error=".errorTxt5">
@@ -219,10 +221,12 @@ Scripts
 
 <!--datepicker script-->   
 <script>
-    $(function () {
-        $("#startdate").datepicker();
-        $("#enddate").datepicker();
-    });
+        $(function () {
+
+            $("#startdate").datepicker();
+            $("#enddate").datepicker();
+        });
+
 </script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>

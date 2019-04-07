@@ -26,7 +26,7 @@ public class CreateConnection {
         prop.setProperty("dbusername", "root");
         prop.setProperty("dbpassword", "gl0v1s10n");
         //     prop.setProperty("url", "jdbc:mysql://localhost/repairstatusfinal");
-        prop.setProperty("url", "jdbc:mysql://localhost/repairstatuslatest");
+        prop.setProperty("url", "jdbc:mysql://localhost/repairstatus");
         //input.close();
 
     }
