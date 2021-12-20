@@ -31,8 +31,8 @@ public class EpochtoReadableDate {
 
     public long currentEpoch(long epoch) {
         epoch = System.currentTimeMillis() / 1000;
-        System.out.println(epoch + "=CurrentDateEpoch");
-
+        System.out.println(epoch + "=currentDateEpoch");
+             
         return epoch;
     }
 
